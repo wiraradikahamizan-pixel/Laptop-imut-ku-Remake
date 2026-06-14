@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Laptop Kentang OS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>🥔 Laptop Kentang OS</h1>
+    <p>Sistem operasi berbasis penderitaan tapi tetap jalan</p>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <h2>📊 Status System</h2>
+      <p id="status">Belum dicek</p>
+      <button onclick="cekLaptop()">Scan System</button>
+    </div>
+
+    <div class="card">
+      <h2>⚙️ Performance Monitor</h2>
+      <p>CPU: <span id="cpu">???</span></p>
+      <p>RAM: <span id="ram">???</span></p>
+      <p>Heat: <span id="heat">???</span></p>
+      <button onclick="updateSpec()">Refresh Data</button>
+    </div>
+
+    <div class="card">
+      <h2>🚨 Emergency Mode</h2>
+      <p id="mode">OFF</p>
+      <button onclick="toggleMode()">Toggle Mode</button>
+    </div>
+
+    <div class="card">
+      <h2>📝 Catatan Kentang</h2>
+      <input id="noteInput" placeholder="Tulis keluhan laptop...">
+      <button onclick="addNote()">Tambah</button>
+      <ul id="notes"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
